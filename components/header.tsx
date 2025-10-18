@@ -5,6 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react"; // ícones leves e bonitos
 
+
+const phone = "5541987870564";
+const handleWhatsapp = () => {
+  const msg = `Olá! Preciso de um orçamento para minha casa. Poderia me ajudar?`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
+};
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,11 +31,9 @@ export default function Header() {
           <Link href="servico" className="hover:text-[#ffc35a] transition-colors">
             Serviços
           </Link>
-          <Link href="/agendar">
-            <button className="bg-[#f0f1f5] hover:bg-[#ffc35a] hover:text-black text-black px-3 py-1 rounded text-xs transition-colors">
+            <button onClick={handleWhatsapp} className="bg-[#f0f1f5] hover:bg-[#ffc35a] hover:text-black text-black px-3 py-1 rounded text-xs transition-colors">
               Solicite um orçamento
             </button>
-          </Link>
         </nav>
 
         <button
@@ -58,17 +63,15 @@ export default function Header() {
             Empresa
           </Link>
           <Link
-            href="/sobre"
+            href="/servico"
             className="hover:text-[#ffc35a] transition-colors"
             onClick={() => setMenuOpen(false)}
           >
             Serviços
           </Link>
-          <Link href="/agendar" onClick={() => setMenuOpen(false)}>
-            <button className="bg-[#f0f1f5] hover:bg-[#ffc35a] hover:text-black text-black px-3 py-1 rounded text-xs transition-colors">
+            <button onClick={handleWhatsapp} className="bg-[#f0f1f5] hover:bg-[#ffc35a] hover:text-black text-black px-3 py-1 rounded text-xs transition-colors">
               Solicite um orçamento
             </button>
-          </Link>
         </nav>
       )}
     </header>

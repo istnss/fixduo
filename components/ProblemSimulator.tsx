@@ -74,8 +74,8 @@ export default function ProblemSimulator() {
 
   const handleWhatsapp = () => {
     if (!room || !furniture) return;
-    const phone = "5541999999999"; // substitua pelo número real (DDI+DDD+numero)
-    const msg = `Olá! Preciso de ajuda com meu ${furniture} no(a) ${room}. ${solutions[furniture]}`;
+    const phone = "5541987870564"; 
+    const msg = `Olá! Preciso de ajuda com meu ${furniture} no(a) ${room}. Poderia me ajudar?`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
   };
 

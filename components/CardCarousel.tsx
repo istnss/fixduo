@@ -8,26 +8,26 @@ const cards = [
     {
         id: 1,
         title: "Reformas",
-        desc: "Planta exuberante com flores vibrantes.",
-        img: "/images/plant1.jpg",
+        desc: "Imagem de uma reforma residencial.",
+        img: "/img_reforma.jpg",
     },
     {
         id: 2,
         title: "Hidráulica",
         desc: "Símbolo de prosperidade e boa sorte.",
-        img: "/images/plant2.jpg",
+        img: "/img_encanador.jpg",
     },
     {
         id: 3,
         title: "Elétrica",
         desc: "Folhagem marcante e elegante.",
-        img: "/images/plant3.jpg",
+        img: "/img_eletricista.jpg",
     },
     {
         id: 4,
         title: "E mais",
         desc: "Confira todos nosso serviços",
-        img: "/images/plant4.jpg",
+        img: "/img_maiss.jpg",
     },
 ];
 
@@ -54,7 +54,7 @@ export default function CardCarousel() {
     }, [emblaApi]);
 
     return (
-        <section className="relative px-4 sm:px-10 lg:px-32 py-24">
+        <section className="relative px-4 sm:px-10 lg:px-32 py-8">
             <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-bold">Destaques</h2>
 
@@ -94,8 +94,8 @@ export default function CardCarousel() {
                                 <div className="p-4">
                                     <h3 className="text-lg font-semibold">{card.title}</h3>
                                     <p className="text-gray-600 text-sm mt-2">{card.desc}</p>
-                                    <button className="mt-4 px-3 py-1 border rounded-md text-sm hover:bg-gray-100 transition">
-                                        Serviços
+                                    <button className="mt-4 px-3 py-1 border rounded-md text-sm hover:bg-gray-100 trans ition">
+                                        <a href="/servico">Serviços</a> 
                                     </button>
                                 </div>
                             </div>
