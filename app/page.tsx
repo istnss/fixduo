@@ -1,6 +1,6 @@
 import CardCarousel from "@/components/CardCarousel";
 import ServicesHome from "@/components/servicesHome";
-import ProblemSimulator from "@/components/ProblemSimulatot";
+import ProblemSimulator from "@/components/ProblemSimulator";
 
 
 export default function Home() {
