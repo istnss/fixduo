@@ -5,7 +5,7 @@ const cards = [
     id: 1,
     img: "/reforma.png",
     title: "Reformas e Alvenaria",
-    desc: "Reparos, reformas, troca de pisos, retoque de parede, balcão, muros, entre outros serviços.",
+    desc: "Reparos, reformas, retoque de parede, balcão, muros, entre outros serviços.",
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const cards = [
 
 export default function ServicesHome() {
   return (
-    <section className="flex items-center justify-center min-h-400px bg-white px-6 py-15">
+    <section className="flex items-center justify-center min-h-400px px-6 py-15">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl w-full">
         {cards.map((card) => (
           <div
@@ -52,7 +52,7 @@ export default function ServicesHome() {
             <Image
               src={card.img}
               alt={card.title}
-              width={70}
+              width={60}
               height={40}
               className="mx-auto md:mx-0"
             />
