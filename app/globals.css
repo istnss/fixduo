@@ -5,7 +5,6 @@
   --foreground: #0a0a0a;
 }
 
-/* Remove margens e espaçamentos padrão do body/html */
 html, body {
   margin: 0;
   padding: 0;

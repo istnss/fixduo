@@ -74,8 +74,8 @@ export default function ProblemSimulator() {
 
   const handleWhatsapp = () => {
     if (!room || !furniture) return;
-    const phone = "5541999999999"; // substitua pelo número real (DDI+DDD+numero)
-    const msg = `Olá! Preciso de ajuda com meu ${furniture} no(a) ${room}. ${solutions[furniture]}`;
+    const phone = "5541987870564"; 
+    const msg = `Olá! Preciso de ajuda com meu ${furniture} no(a) ${room}. Poderia me ajudar?`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
   };
 
@@ -142,26 +142,21 @@ export default function ProblemSimulator() {
               setSolution("");
               setFurniture("");
             }}
-            className="py-2 px-3 rounded-md border bg-gray-100 text-gray-700 font-medium transition"
-          >
+            className="py-2 px-3 rounded-md border bg-gray-100 text-gray-700 font-medium transition">
             Limpar
           </button>
         </div>
       )}
-
-      {/* solução com animação sutil */}
       <div
         className={`overflow-hidden transition-[max-height,opacity,transform] duration-300 ease-out ${
           solution ? "max-h-40 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"
-        }`}
-      >
+        }`}>
         {solution && (
           <div className="mt-2 p-4 bg-gray-50 rounded-md border">
             <p className="text-gray-700">{solution}</p>
             <button
               onClick={handleWhatsapp}
-              className="w-full mt-3 py-2 rounded-md border bg-green-600 text-white font-medium transition-transform transform hover:-translate-y-0.5 active:translate-y-0.5"
-            >
+              className="w-full mt-3 py-2 rounded-md border bg-green-600 text-white font-medium transition-transform transform hover:-translate-y-0.5 active:translate-y-0.5">
               Chamar no WhatsApp
             </button>
           </div>
