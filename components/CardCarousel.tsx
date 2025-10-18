@@ -62,34 +62,29 @@ export default function CardCarousel() {
                     <button
                         onClick={() => emblaApi?.scrollPrev()}
                         disabled={!canScrollPrev}
-                        className="p-2 border rounded-full bg-white shadow disabled:opacity-50"
-                    >
+                        className="p-2 border rounded-full bg-white shadow disabled:opacity-50">
                         <ChevronLeft size={18} />
                     </button>
                     <button
                         onClick={() => emblaApi?.scrollNext()}
                         disabled={!canScrollNext}
-                        className="p-2 border rounded-full bg-white shadow disabled:opacity-50"
-                    >
+                        className="p-2 border rounded-full bg-white shadow disabled:opacity-50">
                         <ChevronRight size={18} />
                     </button>
                 </div>
             </div>
-
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
                         {cards.map((card) => (
                             <div
                                 key={card.id}
-                                className="flex-[0_0_100%] sm:flex-[0_0_calc(33.333%-1rem)] mx-2 bg-white shadow-md rounded-2xl overflow-hidden"
-                            >
+                                className="flex-[0_0_100%] sm:flex-[0_0_calc(33.333%-1rem)] mx-2 bg-white shadow-md rounded-2xl overflow-hidden">
                                 <div className="relative w-full h-48">
                                     <Image
                                         src={card.img}
                                         alt={card.title}
                                         fill
-                                        className="object-cover"
-                                    />
+                                        className="object-cover"/>
                                 </div>
                                 <div className="p-4">
                                     <h3 className="text-lg font-semibold">{card.title}</h3>
@@ -102,20 +97,17 @@ export default function CardCarousel() {
                         ))}
                     </div>
             </div>
-
             <div className="flex justify-center gap-3 mt-4 sm:hidden">
                 <button
                     onClick={() => emblaApi?.scrollPrev()}
                     disabled={!canScrollPrev}
-                    className="p-2 border rounded-full bg-white shadow disabled:opacity-50"
-                >
+                    className="p-2 border rounded-full bg-white shadow disabled:opacity-50">
                     <ChevronLeft size={18} />
                 </button>
                 <button
                     onClick={() => emblaApi?.scrollNext()}
                     disabled={!canScrollNext}
-                    className="p-2 border rounded-full bg-white shadow disabled:opacity-50"
-                >
+                    className="p-2 border rounded-full bg-white shadow disabled:opacity-50">
                     <ChevronRight size={18} />
                 </button>
             </div>

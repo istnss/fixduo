@@ -47,15 +47,13 @@ export default function ServicesHome() {
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl shadow text-center md:text-left"
-          >
+            className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl shadow text-center md:text-left">
             <Image
               src={card.img}
               alt={card.title}
               width={60}
               height={40}
-              className="mx-auto md:mx-0"
-            />
+              className="mx-auto md:mx-0"/>
             <div>
               <h1 className="text-xl font-semibold">{card.title}</h1>
               <p className="text-sm text-gray-600 mt-1">{card.desc}</p>

@@ -51,22 +51,19 @@ export default function Header() {
           <Link
             href="/"
             className="hover:text-[#ffc35a] transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
+            onClick={() => setMenuOpen(false)}>
             Home
           </Link>
           <Link
             href="/empresa"
             className="hover:text-[#ffc35a] transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
+            onClick={() => setMenuOpen(false)}>
             Empresa
           </Link>
           <Link
             href="/servico"
             className="hover:text-[#ffc35a] transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
+            onClick={() => setMenuOpen(false)}>
             Serviços
           </Link>
             <button onClick={handleWhatsapp} className="bg-[#f0f1f5] hover:bg-[#ffc35a] hover:text-black text-black px-3 py-1 rounded text-xs transition-colors">

@@ -1,10 +1,11 @@
 "use client";
 
-
 import CardCarousel from "@/components/CardCarousel";
 import ServicesHome from "@/components/servicesHome";
 import ProblemSimulator from "@/components/ProblemSimulator";
 import Depoimentos from "@/components/Depoimentos";
+import FAQ from "@/components/faq";
+import Footer from "@/components/footer"; 
 
 const phone = "5541987870564";
 const handleWhatsapp = () => {
@@ -26,12 +27,10 @@ export default function Home() {
       <main className="flex-1 py-8">
         <h1 className="text-3xl font-bold text-center mt-10">Nossos serviços</h1>
         <ServicesHome />
-
         <div className="text-center my-2 py-2 mb-10">
             <button
               onClick={handleWhatsapp}
-              className="bg-[#0b2235] text-white px-20 py-4 rounded-full mt-2 hover:bg-blue-700 transition-colors"
-            >
+              className="bg-[#0b2235] text-white px-20 py-4 rounded-full mt-2 hover:bg-blue-700 transition-colors">
               Solicitar Orçamento
             </button>
         </div>
@@ -45,11 +44,9 @@ export default function Home() {
                 <li className="bg-[#0b2235] text-white rounded-lg px-4 py-3 text-sm">Tomadas soltas</li>
                 <li className="bg-[#0b2235] text-white rounded-lg px-4 py-3 text-sm" >Móveis com problemas</li>
               </ul>
-              <p>Aqui você encontra orientações rápidas e já pode solicitar umespecialista confiável para resolver tudo com segurança e agilidade.</p>
-              <br />
-              <p><em>Não deixe pequenos problemas se tornarem grandes dores de cabeça.</em></p>
-              <br />
-              <p>Conte com a <strong>FixDuo</strong> para manter sua casa sempre em ordem!<br /><br />
+              <p>Aqui você encontra orientações rápidas e já pode solicitar umespecialista confiável para resolver tudo com segurança e agilidade.</p><br/>
+              <p><em>Não deixe pequenos problemas se tornarem grandes dores de cabeça.</em></p><br/>
+              <p>Conte com a <strong>FixDuo</strong> para manter sua casa sempre em ordem!<br/><br/>
                 <strong>Simule agora</strong> e veja como é fácil cuidar da sua casa com anossa ajuda! ➡︎ </p>
             </div>
             <div className="flex justify-center md:justify-end">
@@ -64,28 +61,10 @@ export default function Home() {
           <CardCarousel />
         </div>
         <div>
-
+          <FAQ/>
         </div>
-
-
       </main >
-
-
-      < footer className="bg-[#0b2235] text-white py-4 text-center" >
-        <div>
-
-          <div>
-            <p>Atuação: Campo Magro • Curitiba • Região <br></br>
-              contato@embradecon.com.br</p>
-          </div>
-          <div>
-            <p>askdlakdls</p>
-          </div>
-
-        </div>
-
-        © {new Date().getFullYear()} - Todos os direitos reservados
-      </ footer >
+      <Footer/>
     </div >
   );
 }

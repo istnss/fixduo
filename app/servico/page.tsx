@@ -1,19 +1,23 @@
 "use client";
 
+import Footer from "@/components/footer";
+
 const phone = "5541987870564";
 const handleWhatsapp = () => {
-  const msg = `Olá! Preciso de um orçamento para minha casa. Poderia me ajudar?`;
-  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
+    const msg = `Olá! Preciso de um orçamento para minha casa. Poderia me ajudar?`;
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
 };
-
 
 export default function Servico() {
     return (
-        <section className="min-h-screen bg-gray-50 py-20 px-6">
-            <h1 className="text-2xl text-center font-bold text-gray-800 mb-6">Nossos Serviços</h1>
-            <div className="flex flex-col items-center">
-                <button onClick={handleWhatsapp} className="mb-10 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-900 transition text-center justify-center">Chamar no Whatsapp</button>
+        <section className="min-h-screen bg-[#f3f4f6]">
+            <div className="max-w-6xl mx-auto py-10 px-6 mt-2">
+                <h1 className="text-2xl text-center font-bold text-gray-800 mb-6 ">Nossos Serviços</h1>
+                <div className="flex flex-col items-center">
+                    <button onClick={handleWhatsapp} className="mb-10 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-900 transition text-center justify-center">Chamar no Whatsapp</button>
+                </div>
             </div>
+
             <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
                 <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
                     <img src="/1.jpg" alt="Acessórios de cozinha" className="w-30 h-30 mb-4" />
@@ -137,6 +141,9 @@ export default function Servico() {
                     <img src="/img_eletricista.jpg" alt="Consertos Gerais" className="w-30 h-30 mb-4" />
                     <h3 className="font-semibold text-gray-900 text -center text-sm">Consertos Gerais</h3>
                 </div>
+            </div>
+            <div className="items-center mt-12">
+                <Footer />
             </div>
         </section>
     );
