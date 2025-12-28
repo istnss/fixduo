@@ -1,14 +1,14 @@
 export default function Depoimentos() {
   return (
-    <div className="my-10 py-8 px-2">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-12 text-gray-800"> O que nossos clientes dizem</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-gray-700">
+    <div className="my-10 py-8 px-2" >
+      <div className="max-w-7xl mx-auto ">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800"> O que nossos clientes dizem</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-gray-700 px-4">
           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
             <img
-              src="user1.jpg"
+              src="/user1.png"
               alt="Foto de usuário"
-              className="w-20 h-20 rounded-full object-cover mb-4"/>
+              className="w-20 h-20 rounded-full object-cover mb-4" />
             <div className="flex justify-center mb-3">
               {[...Array(5)].map((_, i) => (
                 <svg
@@ -25,11 +25,11 @@ export default function Depoimentos() {
             </p>
             <h3 className="font-semibold text-gray-900">Guilherme Santos</h3>
           </div>
-           <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
+          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
             <img
-              src="/user2.jpg"
+              src="/user2.png"
               alt="Foto de usuário"
-              className="w-20 h-20 rounded-full object-cover mb-4"/>
+              className="w-20 h-20 rounded-full object-cover mb-4" />
             <div className="flex justify-center mb-3">
               {[...Array(5)].map((_, i) => (
                 <svg
@@ -46,11 +46,11 @@ export default function Depoimentos() {
             </p>
             <h3 className="font-semibold text-gray-900">Mariana Silva</h3>
           </div>
-            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
+          <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
             <img
-                src="/user3.jpg"
-                alt="Foto de usuário"
-                className="w-20 h-20 rounded-full object-cover mb-4"/>
+              src="/user3.png"
+              alt="Foto de usuário"
+              className="w-20 h-20 rounded-full object-cover mb-4" />
             <div className="flex justify-center mb-3">
               {[...Array(5)].map((_, i) => (
                 <svg
@@ -67,7 +67,7 @@ export default function Depoimentos() {
               Recomendo demais.”
             </p>
             <h3 className="font-semibold text-gray-900">Isabela de Oliveira</h3>
-          </div>       
+          </div>
         </div>
       </div>
     </div>

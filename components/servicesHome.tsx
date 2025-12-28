@@ -11,7 +11,7 @@ const cards = [
     id: 2,
     img: "/hidraulica.png",
     title: "Serviços Hidráulicos",
-    desc: "Sifões, troca de torneiras, canos, instalação de válvulas hidráulica, entre outros serviços.",
+    desc: "Sifões, troca de torneiras, canos, instalação de válvulas hidráulica",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const cards = [
     id: 5,
     img: "/instalação.png",
     title: "Instalações Diversas",
-    desc: "Instalações de varais, suportes para TV, gabinetes, quadros, prateleiras, entre outros.",
+    desc: "Instalações de varais, suportes para TV, gabinetes, prateleiras, entre outros.",
   },
   {
     id: 6,
@@ -42,12 +42,12 @@ const cards = [
 
 export default function ServicesHome() {
   return (
-    <section className="flex items-center justify-center min-h-400px px-6 py-15">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl w-full">
+    <section className="flex items-center justify-center min-h-400px px-6 lg:py-15 md:py-10 sm:py-8 py-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl shadow text-center md:text-left">
+            className="flex items-center gap-8 p-6 bg-gray-50 rounded-xl shadow text-center md:text-left">
             <Image
               src={card.img}
               alt={card.title}
@@ -55,7 +55,7 @@ export default function ServicesHome() {
               height={40}
               className="mx-auto md:mx-0"/>
             <div>
-              <h1 className="text-xl font-semibold">{card.title}</h1>
+              <p className="text-xm font-semibold">{card.title}</p>
               <p className="text-sm text-gray-600 mt-1">{card.desc}</p>
             </div>
           </div>

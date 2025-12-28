@@ -9,7 +9,7 @@ export default function FAQ() {
     },
     {
       question: "Que tipos de serviços vocês realizam?",
-      answer: "Oferecemos serviços de encanamento, eletricidade, reparos domésticos, montagem de móveis, pintura e manutenção geral.",
+      answer: "Oferecemos serviços de hidráulica, eletríca, reparos domésticos, montagem de móveis, pintura e manutenção geral.",
     },
     {
       question: "O orçamento é gratuito?",

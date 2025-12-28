@@ -7,27 +7,21 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const cards = [
     {
         id: 1,
-        title: "Reformas",
-        desc: "Imagem de uma reforma residencial.",
-        img: "/img_reforma.jpg",
+        title: "Hidráulica",
+        desc: "Soluções em hidráulica para sua casa e empresa.",
+        img: "/img_encanador.png",
     },
     {
         id: 2,
-        title: "Hidráulica",
-        desc: "Símbolo de prosperidade e boa sorte.",
-        img: "/img_encanador.jpg",
+        title: "Elétrica",
+        desc: "Manutenção em elétrica para sua casa e empresa.",
+        img: "/img_eletricista.png",
     },
     {
         id: 3,
-        title: "Elétrica",
-        desc: "Folhagem marcante e elegante.",
-        img: "/img_eletricista.jpg",
-    },
-    {
-        id: 4,
         title: "E mais",
         desc: "Confira todos nosso serviços",
-        img: "/img_maiss.jpg",
+        img: "/img_maiss.png",
     },
 ];
 
@@ -54,7 +48,7 @@ export default function CardCarousel() {
     }, [emblaApi]);
 
     return (
-        <section className="relative px-4 sm:px-10 lg:px-32 py-8">
+        <section className="relative px-4 sm:px-10 lg:px-32 py-25">
             <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-bold">Destaques</h2>
 
@@ -79,7 +73,7 @@ export default function CardCarousel() {
                             <div
                                 key={card.id}
                                 className="flex-[0_0_100%] sm:flex-[0_0_calc(33.333%-1rem)] mx-2 bg-white shadow-md rounded-2xl overflow-hidden">
-                                <div className="relative w-full h-48">
+                                <div className="relative w-full h-75">
                                     <Image
                                         src={card.img}
                                         alt={card.title}
@@ -89,8 +83,8 @@ export default function CardCarousel() {
                                 <div className="p-4">
                                     <h3 className="text-lg font-semibold">{card.title}</h3>
                                     <p className="text-gray-600 text-sm mt-2">{card.desc}</p>
-                                    <button className="mt-4 px-3 py-1 border rounded-md text-sm hover:bg-gray-100 trans ition">
-                                        <a href="/servico">Serviços</a> 
+                                    <button className="mt-4 px-10 py-3 border rounded-md text-sm hover:bg-[#0b2235] transition hover:text-white  ">
+                                        <a href="/servico">Ver mais</a> 
                                     </button>
                                 </div>
                             </div>
