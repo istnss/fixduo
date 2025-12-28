@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react"; // ícones leves e bonitos
+import { Menu, X } from "lucide-react";
 
 
 const phone = "5541987870564";
@@ -19,7 +19,9 @@ export default function Header() {
     <header className="w-full bg-[#0b2235] text-white shadow-md">
       <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-2">
         <div className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Logo da empresa" width={90} height={30} />
+          <a href="/"> 
+            <Image src="/logo.png" alt="Logo da empresa" width={90} height={30} />
+          </a>
         </div>
         <nav className="hidden md:flex items-center space-x-4 text-sm">
           <Link href="/" className="hover:text-[#ffc35a] transition-colors">
@@ -45,9 +47,9 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Menu mobile */}
       {menuOpen && (
         <nav className="md:hidden flex flex-col items-center bg-[#0b2235] border-t border-gray-700 py-3 space-y-3 text-sm">
+
           <Link
             href="/"
             className="hover:text-[#ffc35a] transition-colors"

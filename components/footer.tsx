@@ -39,11 +39,11 @@ export default function Footer() {
           <ul className="space-y-3 text-gray-300">
             <li className="flex items-center gap-2">
               <Phone size={18} className="text-[#ffc35a]" />
-              <span>(41) 98787-0564</span>
+                <a href="https://api.whatsapp.com/send/?phone=5541987870564" target="blank" className="hover:underline">(41) 98787-0564</a>
             </li>
             <li className="flex items-center gap-2">
               <Mail size={18} className="text-[#ffc35a]" />
-              <span>contato@fixduo.com</span>
+              <span>contato.fixduo@gmail.com</span>
             </li>
           </ul>
         </div>
@@ -57,7 +57,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Rodapé inferior */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} FixDuo. Todos os direitos reservados.
       </div>
