@@ -58,7 +58,6 @@ export default function CtaModal({
     <div className="fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center px-4">
       <div className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full overflow-hidden relative animate-fadeIn">
 
-        {/* Botão fechar */}
         <button
           onClick={() => setOpen(false)}
           className="absolute top-4 right-4 w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-xl flex items-center justify-center"
@@ -68,7 +67,6 @@ export default function CtaModal({
 
         <div className="grid grid-cols-1 md:grid-cols-2">
           
-          {/* Lado visual */}
           <div className="hidden md:flex items-center justify-center bg-[#ffc35a] p-10">
             <img
               src="/img_empresa.png"
@@ -77,7 +75,6 @@ export default function CtaModal({
             />
           </div>
 
-          {/* Conteúdo */}
           <div className="p-8 md:p-12 text-center md:text-left">
             <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
               {title}

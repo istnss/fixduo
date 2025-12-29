@@ -2,9 +2,6 @@
 
 import Script from "next/script";
 
-/**
- * Tipagem local do widget (sem arquivo extra)
- */
 declare global {
   interface Window {
     CreateWhatsappChatWidget?: (options: any) => void;
