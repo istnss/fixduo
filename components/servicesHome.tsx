@@ -39,7 +39,6 @@ const cards = [
   },
 ];
 
-
 export default function ServicesHome() {
   return (
     <section className="flex items-center justify-center min-h-400px px-6 lg:py-15 md:py-10 sm:py-8 py-6">
